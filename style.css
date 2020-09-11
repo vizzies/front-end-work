@@ -40,14 +40,44 @@ body{
 
 /*Resize the wrap to see the search bar change!*/
 .searchbar-container{
-  width: 60%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 82.5%;
+  position: relative;
+  margin: 20px auto;
 }
 
 .article-card {
   background: #fff;
   padding: 8px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  background: #f3f3f3;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-title {
+  font-weight: 800;
+  margin: 8px 0 0 0;
+}
+
+.card {
+  margin: 30px auto;
+  background: #fff;
+  width: 80%;
+  max-height: 250px;
+  padding: 6px 15px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2);
+  transform: scale(1.005);
+}
+
+.word-count{
+  float: right;
 }
